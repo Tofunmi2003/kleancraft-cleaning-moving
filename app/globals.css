@@ -12,6 +12,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -23,4 +27,112 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  margin-top: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  width: min(1200px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100%, calc(100% - 1.25rem));
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  color: white;
+  box-shadow: 0 18px 38px -18px rgba(91, 33, 182, 0.8);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.btn-secondary--light {
+  background: white;
+  border-color: rgba(91, 33, 182, 0.25);
+  color: #5b21b6;
+  box-shadow: 0 12px 28px -18px rgba(91, 33, 182, 0.55);
+}
+
+.btn-secondary--light:hover {
+  background: #f5f3ff;
+  border-color: rgba(91, 33, 182, 0.4);
+  color: #4c1d95;
+}
+
+.surface-card,
+.feature-card,
+.review-card,
+.step-card {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 20px 45px -28px rgba(15, 23, 42, 0.28);
+}
+
+.feature-card,
+.review-card,
+.step-card {
+  background: linear-gradient(180deg, rgba(34, 28, 42, 0.96), rgba(19, 15, 27, 0.96));
+  border-color: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.feature-card h3,
+.feature-card p,
+.review-card h3,
+.review-card p,
+.review-card div,
+.step-card h3,
+.step-card p,
+.step-card div {
+  color: inherit;
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: rgba(95, 63, 141, 0.08);
+  border: 1px solid rgba(95, 63, 141, 0.12);
+  color: var(--brand-strong, #4a2d6d);
+  padding: 0.5rem 0.8rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-kicker--dark {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #f5f3ff;
 }

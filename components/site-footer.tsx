@@ -74,19 +74,15 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Contact</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Location</h3>
             <ul className="mt-5 space-y-4 text-sm text-slate-300">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-violet-300" />
-                <span>128 Bloom Avenue, Suite 220, Portland, OR</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone size={16} className="shrink-0 text-violet-300" />
-                <a href="tel:+15557182341" className="transition hover:text-white">(555) 718-2341</a>
+                <span>Akure, Ondo State, Nigeria</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="shrink-0 text-violet-300" />
-                <a href="mailto:hello@kleancraft.com" className="transition hover:text-white">hello@kleancraft.com</a>
+                <a href="mailto:onyekatofunmi@gmail.com" className="transition hover:text-white">onyekatofunmi@gmail.com</a>
               </li>
             </ul>
           </div>

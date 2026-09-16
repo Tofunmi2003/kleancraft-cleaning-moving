@@ -12,24 +12,17 @@ export default function ContactPage() {
         <div className="space-y-4">
           <div className="surface-card border-white/10 bg-[#201b2d] p-5 shadow-none">
             <div className="flex items-center gap-3 text-violet-200">
-              <Phone size={16} />
-              <span className="text-sm font-semibold uppercase tracking-[0.16em] text-black">Call us</span>
-            </div>
-            <p className="mt-3 text-lg font-medium text-black">(555) 718-2341</p>
-          </div>
-          <div className="surface-card border-white/10 bg-[#201b2d] p-5 shadow-none">
-            <div className="flex items-center gap-3 text-violet-200">
               <Mail size={16} />
               <span className="text-sm font-semibold uppercase tracking-[0.16em] text-black">Email</span>
             </div>
-            <p className="mt-3 text-lg font-medium text-black">hello@kleancraft.com</p>
+            <p className="mt-3 text-lg font-medium text-black">onyekatofunmi@gmail.com</p>
           </div>
           <div className="surface-card border-white/10 bg-[#201b2d] p-5 shadow-none">
             <div className="flex items-center gap-3 text-violet-200">
               <MapPin size={16} />
-              <span className="text-sm font-semibold uppercase tracking-[0.16em] text-black">Visit</span>
+              <span className="text-sm font-semibold uppercase tracking-[0.16em] text-black">Address</span>
             </div>
-            <p className="mt-3 text-lg font-medium text-black">128 Bloom Avenue, Suite 220, Portland, OR</p>
+            <p className="mt-3 text-lg font-medium text-black">Akure, Ondo State, Nigeria</p>
           </div>
         </div>
 

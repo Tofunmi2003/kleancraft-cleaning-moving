@@ -189,12 +189,11 @@ export default function Home() {
       <section className="container pt-12 pb-16 md:pt-16 md:pb-20">
         <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_1.05fr]">
           <div>
-            <span className="section-kicker">Premium cleaning, thoughtfully done</span>
-            <h1 className="mt-6 max-w-xl text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl">
+            <h1 className="max-w-xl text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl">
               A Cleaner Space. A Better Experience.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-200">
-              Professional cleaning services for homes, offices, event spaces, and commercial properties.
+              Professional cleaning, moving support, and home care for homes, offices, and busy households.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -393,8 +392,8 @@ export default function Home() {
           <div>
             <SectionHeading
               eyebrow="Book a cleaning"
-              title="Tell us about your space and we’ll handle the rest."
-              description="Our booking process is designed to be quick, transparent, and easy to complete from mobile or desktop."
+              title="Need your space cleaned or refreshed?"
+              description="Use this form to request a cleaning service and confirm your preferred schedule, property details, and service needs."
               theme="dark"
             />
 
@@ -423,8 +422,8 @@ export default function Home() {
           <div>
             <SectionHeading
               eyebrow="Get a quote"
-              title="Fast, tailored estimates for your property and cleaning needs."
-              description="Share a few details and we’ll prepare a more accurate estimate based on your property type, size, and service preferences."
+              title="Need an estimate before booking?"
+              description="Tell us about your property and service needs for a tailored estimate, especially for moving support, larger homes, or custom requests."
               theme="dark"
             />
             <div className="mt-8 rounded-[1.75rem] border border-violet-200/20 bg-violet-500/10 p-6 text-white">

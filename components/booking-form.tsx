@@ -5,9 +5,11 @@ import { useState } from "react";
 const serviceOptions = [
   "Residential Cleaning",
   "Deep Cleaning",
+  "Sofa & Chair Cleaning",
   "Surface Cleaning",
   "Office Cleaning",
   "Commercial Cleaning",
+  "Post-Construction Cleaning",
   "Event / Hall Cleaning",
   "Move-In / Move-Out Cleaning",
   "Custom Cleaning",

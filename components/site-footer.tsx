@@ -4,8 +4,10 @@ import { MapPin, Mail, Phone, Sparkles } from "lucide-react";
 const services = [
   "Residential Cleaning",
   "Deep Cleaning",
+  "Sofa & Chair Cleaning",
   "Office Cleaning",
   "Commercial Cleaning",
+  "Post-Construction Cleaning",
   "Event Cleaning",
   "Move-In / Move-Out",
 ];

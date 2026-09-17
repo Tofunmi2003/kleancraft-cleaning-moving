@@ -1,7 +1,7 @@
 import { PageShell } from "@/components/page-shell";
 
 const faqs = [
-  { question: "What cleaning services do you offer?", answer: "We provide residential, deep, office, commercial, move-in or move-out, surface, event, and custom cleaning services tailored to your space." },
+  { question: "What cleaning services do you offer?", answer: "We provide residential, deep, sofa & chair, office, commercial, post-construction, move-in or move-out, surface, event, and custom cleaning services tailored to your space." },
   { question: "Do you provide cleaning equipment?", answer: "Yes. Our team brings the necessary supplies and equipment for standard service visits, with optional product preferences available on request." },
   { question: "Do you clean offices and commercial spaces?", answer: "Yes. We support workplaces, clinics, rental properties, retail spaces, and other commercial environments with flexible schedules." },
   { question: "Can I book a one-time cleaning?", answer: "Absolutely. You can request a one-time clean or choose weekly, bi-weekly, or monthly recurring service." },

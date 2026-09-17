@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { BookingForm } from "@/components/booking-form";
-import { QuoteForm } from "@/components/quote-form";
 import { FloatingChat } from "@/components/floating-chat";
 
 const trustPillars = [
@@ -44,6 +43,12 @@ const services = [
     image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80",
   },
   {
+    title: "Sofa & Chair Cleaning",
+    description: "Gentle yet thorough upholstery cleaning that removes dust, stains, and daily buildup from soft furnishings.",
+    icon: Sparkles,
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+  },
+  {
     title: "Surface Cleaning",
     description: "Precision care for counters, fixtures, glass, and high-touch surfaces that keep spaces polished daily.",
     icon: Sparkles,
@@ -60,6 +65,12 @@ const services = [
     description: "Reliable service for retail, clinic, fitness, and hospitality spaces with flexible scheduling windows.",
     icon: Building2,
     image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Post-Construction Cleaning",
+    description: "Final dust removal and detail cleaning for freshly renovated or newly built spaces before handover or occupancy.",
+    icon: Wrench,
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Event / Hall Cleaning",
@@ -160,7 +171,7 @@ const testimonials = [
 ];
 
 const faqs = [
-  { question: "What cleaning services do you offer?", answer: "We provide residential, deep, office, commercial, move-in or move-out, surface, event, and custom cleaning services tailored to your space." },
+  { question: "What cleaning services do you offer?", answer: "We provide residential, deep, sofa & chair, office, commercial, post-construction, move-in or move-out, surface, event, and custom cleaning services tailored to your space." },
   { question: "Do you provide cleaning equipment?", answer: "Yes. Our team brings the necessary supplies and equipment for standard service visits, with optional product preferences available on request." },
   { question: "Do you clean offices and commercial spaces?", answer: "Yes. We support workplaces, clinics, rental properties, retail spaces, and other commercial environments with flexible schedules." },
   { question: "Can I book a one-time cleaning?", answer: "Absolutely. You can request a one-time clean or choose weekly, bi-weekly, or monthly recurring service." },
@@ -198,11 +209,16 @@ export default function Home() {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/booking" className="btn-primary h-12 px-6">
-                Book a Cleaning
+                Book a Service
               </Link>
-              <Link href="/quote" className="btn-secondary h-12 px-6">
-                Get a Quote
-              </Link>
+              <a
+                href="https://wa.me/2349064621664?text=Hi%20KleanCraft%2C%20I%20want%20to%20book%20a%20service."
+                target="_blank"
+                rel="noreferrer"
+                className="btn-secondary h-12 px-6"
+              >
+                Contact us on WhatsApp
+              </a>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -417,29 +433,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quote" className="bg-[#1b1724] section">
-        <div className="container grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div>
-            <SectionHeading
-              eyebrow="Get a quote"
-              title="Need an estimate before booking?"
-              description="Tell us about your property and service needs for a tailored estimate, especially for moving support, larger homes, or custom requests."
-              theme="dark"
-            />
-            <div className="mt-8 rounded-[1.75rem] border border-violet-200/20 bg-violet-500/10 p-6 text-white">
-              <div className="flex items-center gap-3 text-violet-200">
-                <CalendarCheck2 size={18} />
-                <span className="text-sm font-semibold uppercase tracking-[0.16em]">Quote support</span>
-              </div>
-              <p className="mt-4 text-sm leading-7 text-slate-200">
-                Final pricing can be confirmed after review. The quote form is designed so it can later connect to automated follow-up workflows and customer communications.
-              </p>
-            </div>
-          </div>
-          <QuoteForm />
-        </div>
-      </section>
-
       <section id="faq" className="bg-[#1b1724] section">
         <div className="container">
           <SectionHeading
@@ -471,11 +464,16 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="/booking" className="btn-primary h-12 px-6">
-                Book a Cleaning
+                Book a Service
               </Link>
-              <Link href="/quote" className="btn-secondary btn-secondary--light h-12 px-6">
-                Get a Quote
-              </Link>
+              <a
+                href="https://wa.me/2349064621664?text=Hi%20KleanCraft%2C%20I%20want%20to%20talk%20about%20a%20service."
+                target="_blank"
+                rel="noreferrer"
+                className="btn-secondary btn-secondary--light h-12 px-6"
+              >
+                Contact us on WhatsApp
+              </a>
             </div>
           </div>
         </div>

@@ -40,7 +40,7 @@ export function SiteHeader() {
 
         <div className="hidden lg:block">
           <Link href="/booking" className="btn-primary h-11 px-5 text-sm">
-            Book a Cleaning
+            Book a Service
           </Link>
         </div>
 
@@ -72,7 +72,7 @@ export function SiteHeader() {
               className="btn-primary mt-3 h-11 px-5 text-sm"
               onClick={() => setOpen(false)}
             >
-              Book a Cleaning
+              Book a Service
             </Link>
           </nav>
         </div>

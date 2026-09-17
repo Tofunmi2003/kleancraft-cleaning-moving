@@ -17,6 +17,12 @@ const services = [
     icon: Sparkles,
   },
   {
+    title: "Sofa & Chair Cleaning",
+    description: "Upholstery care that freshens fabric seating, removes dust, and restores a cleaner, more comfortable finish.",
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    icon: Sparkles,
+  },
+  {
     title: "Surface Cleaning",
     description: "Polishing and sanitizing for counters, surfaces, glass, and touchpoints that need frequent care.",
     image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=900&q=80",
@@ -33,6 +39,12 @@ const services = [
     description: "Reliable upkeep for businesses needing consistency, flexibility, and excellent presentation.",
     image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
     icon: Building2,
+  },
+  {
+    title: "Post-Construction Cleaning",
+    description: "Dust removal and final-touch detailing for newly renovated or newly built spaces before occupancy.",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
+    icon: Wrench,
   },
   {
     title: "Event / Hall Cleaning",

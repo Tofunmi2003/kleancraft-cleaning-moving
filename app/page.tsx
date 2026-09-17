@@ -204,7 +204,7 @@ export default function Home() {
               A Cleaner Space. A Better Experience.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-200">
-              Professional cleaning, moving support, and home care for homes, offices, and busy households.
+              KleanCraft provides Residential Cleaning, Deep Cleaning, Sofa&chair Cleaning, Surface Cleaning, office cleaning, commercial cleaning, move-in/move-out Cleaning services across Akure, Ondo State.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">

@@ -37,6 +37,10 @@ export default function ContactPage() {
               <input type="email" className="rounded-2xl border border-slate-600 bg-slate-100 px-4 py-3 text-black outline-none transition placeholder:text-slate-500 focus:border-violet-400 focus:bg-white" placeholder="you@example.com" />
             </label>
             <label className="grid gap-2 text-sm font-medium text-black md:col-span-2">
+              Phone number (Nigeria)
+              <input type="tel" className="rounded-2xl border border-slate-600 bg-slate-100 px-4 py-3 text-black outline-none transition placeholder:text-slate-500 focus:border-violet-400 focus:bg-white" placeholder="+234 90 1234 5678" />
+            </label>
+            <label className="grid gap-2 text-sm font-medium text-black md:col-span-2">
               Subject
               <input className="rounded-2xl border border-slate-600 bg-slate-100 px-4 py-3 text-black outline-none transition placeholder:text-slate-500 focus:border-violet-400 focus:bg-white" placeholder="How can we help?" />
             </label>

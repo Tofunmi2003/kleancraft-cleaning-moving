@@ -87,8 +87,8 @@ export function BookingForm() {
             <input name="fullName" className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-black outline-none transition placeholder:text-slate-500 focus:border-violet-400 focus:bg-white" placeholder="Your full name" required />
           </label>
           <label className="grid gap-2 text-sm font-medium text-black">
-            Phone number
-            <input name="phone" className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-black outline-none transition placeholder:text-slate-500 focus:border-violet-400 focus:bg-white" placeholder="(555) 123-4567" required />
+            Phone number (Nigeria)
+            <input name="phone" type="tel" className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-black outline-none transition placeholder:text-slate-500 focus:border-violet-400 focus:bg-white" placeholder="+234 90 1234 5678" required />
           </label>
           <label className="grid gap-2 text-sm font-medium text-black">
             Email

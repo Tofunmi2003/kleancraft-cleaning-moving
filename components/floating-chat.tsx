@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Bot, MessageSquareText, MessageCircle, Phone, Send, Sparkles, X } from "lucide-react";
+import { Bot, FileText, MessageSquareText, MessageCircle, Phone, Send, Sparkles, X } from "lucide-react";
 
 const quickPrompts = [
   "Book a service",
@@ -51,6 +51,13 @@ export function FloatingChat() {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-2">
       <div className="relative z-20 flex flex-col items-end gap-2">
+        <a
+          href="/quote"
+          aria-label="Request a quote"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-violet-700 shadow-[0_18px_35px_-18px_rgba(109,74,197,0.8)] ring-1 ring-violet-200 transition hover:scale-[1.02]"
+        >
+          <FileText size={18} />
+        </a>
         <a
           href="https://wa.me/2349064621664?text=Hi%20KleanCraft%2C%20I%20want%20to%20book%20a%20service."
           target="_blank"

@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { BookingForm } from "@/components/booking-form";
-import { FloatingChat } from "@/components/floating-chat";
 
 const trustPillars = [
   "Professional Cleaners",
@@ -219,6 +218,9 @@ export default function Home() {
               >
                 Contact us on WhatsApp
               </a>
+              <Link href="/quote" className="btn-secondary h-12 px-6">
+                Request a Quote
+              </Link>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -478,8 +480,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <FloatingChat />
     </>
   );
 }

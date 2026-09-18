@@ -80,6 +80,20 @@ export async function POST(request: Request) {
     }
 
     if (!isSupabaseConfigured() || !supabaseAdmin) {
+      await sendQuoteNotification({
+        bookingId: "demo-quote",
+        fullName,
+        email,
+        phone,
+        propertyType,
+        size,
+        cleaningType,
+        rooms,
+        frequency,
+        location,
+        notes,
+      });
+
       return NextResponse.json(
         {
           message: "Quote request accepted in demo mode. Add your Supabase credentials to store it in the database.",

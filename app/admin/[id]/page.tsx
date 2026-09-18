@@ -1,4 +1,5 @@
 import { AdminGate } from "@/components/admin-gate";
+import { InvoiceEditor } from "@/components/invoice-editor";
 import { supabaseAdmin } from "@/lib/supabase";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -145,6 +146,17 @@ export default async function AdminRequestPage({ params }: { params: Promise<{ i
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8">
+          <InvoiceEditor
+            bookingId={item.id}
+            customerName={customer?.name ?? "Unknown customer"}
+            customerEmail={customer?.email ?? "No email"}
+            customerPhone={customer?.phone ?? "No phone"}
+            customerAddress={customer?.address ?? ""}
+            requestLabel={item.status === "quote_requested" || item.status === "quoted" ? "Quote request" : "Booking"}
+          />
         </div>
       </div>
     </AdminGate>

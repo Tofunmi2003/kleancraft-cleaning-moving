@@ -52,7 +52,33 @@ create table if not exists payments (
   created_at timestamptz not null default now()
 );
 
+create table if not exists invoices (
+  id uuid primary key default gen_random_uuid(),
+  booking_id uuid not null unique references bookings(id) on delete cascade,
+  invoice_number text not null unique,
+  status text not null default 'draft',
+  subtotal numeric(12,2) not null default 0,
+  discount numeric(12,2) not null default 0,
+  total numeric(12,2) not null default 0,
+  due_date date,
+  payment_details text,
+  notes text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists invoice_items (
+  id uuid primary key default gen_random_uuid(),
+  invoice_id uuid not null references invoices(id) on delete cascade,
+  description text not null,
+  amount numeric(12,2) not null default 0,
+  sort_order integer not null default 0,
+  created_at timestamptz not null default now()
+);
+
 create index if not exists customers_email_idx on customers(email);
 create index if not exists bookings_customer_idx on bookings(customer_id);
 create index if not exists bookings_status_idx on bookings(status);
 create index if not exists payments_booking_idx on payments(booking_id);
+create index if not exists invoices_booking_idx on invoices(booking_id);
+create index if not exists invoice_items_invoice_idx on invoice_items(invoice_id);

@@ -67,7 +67,7 @@ export function InvoiceEditor({ bookingId, customerName, customerEmail, customer
   }
 
   return (
-    <section className="surface-card invoice-editor p-6 print:border-0 print:p-0 print:shadow-none">
+    <section className="surface-card invoice-editor p-6 print:border-0 print:shadow-none">
       <div className="invoice-letterhead -mx-6 -mt-6 mb-6 flex items-center justify-between bg-violet-700 px-6 py-5 text-white print:-mx-0 print:-mt-0">
         <div>
           <p className="text-2xl font-semibold tracking-tight">KleanCraft</p>

@@ -153,9 +153,12 @@ body {
 
   .invoice-editor {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     margin: 0;
+    padding: 10mm 9mm;
+    box-sizing: border-box;
     border-radius: 0;
     background: white;
     box-shadow: none;

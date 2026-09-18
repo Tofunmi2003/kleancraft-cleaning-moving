@@ -68,6 +68,16 @@ export function InvoiceEditor({ bookingId, customerName, customerEmail, customer
 
   return (
     <section className="surface-card invoice-editor p-6 print:border-0 print:p-0 print:shadow-none">
+      <div className="invoice-letterhead -mx-6 -mt-6 mb-6 flex items-center justify-between bg-violet-700 px-6 py-5 text-white print:-mx-0 print:-mt-0">
+        <div>
+          <p className="text-2xl font-semibold tracking-tight">KleanCraft</p>
+          <p className="mt-1 text-xs uppercase tracking-[0.2em] text-violet-100">Cleaning &amp; Moving</p>
+        </div>
+        <div className="text-right">
+          <p className="text-xs uppercase tracking-[0.18em] text-violet-100">Official invoice</p>
+          <p className="mt-1 text-sm font-medium">Akure, Ondo State, Nigeria</p>
+        </div>
+      </div>
       <div className="flex flex-wrap items-start justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
           <p className="section-kicker">Invoice editor</p>
@@ -75,8 +85,8 @@ export function InvoiceEditor({ bookingId, customerName, customerEmail, customer
           <p className="mt-1 text-sm text-slate-500">For {requestLabel}</p>
         </div>
         <div className="flex gap-2 print:hidden">
-          <button type="button" onClick={() => window.print()} className="btn-secondary h-10 px-4 text-sm">Print / Save PDF</button>
-          <button type="button" onClick={() => saveInvoice("sent")} disabled={saving} className="btn-primary h-10 px-4 text-sm">{saving ? "Saving..." : "Save invoice"}</button>
+          <button type="button" onClick={() => window.print()} className="btn-primary h-10 px-4 text-sm">Print / Save PDF</button>
+          <button type="button" onClick={() => saveInvoice("sent")} disabled={saving} className="btn-secondary btn-secondary--light h-10 px-4 text-sm">{saving ? "Saving..." : "Save invoice"}</button>
         </div>
       </div>
 
